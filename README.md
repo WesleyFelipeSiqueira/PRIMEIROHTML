@@ -1,510 +1,135 @@
-body{
-margin:0;
-}
+<html>
+<head>
+<title> Bolo </title>
+
+<link rel="stylesheet" href="pot.css">
 
 
-				/*TÍTULO*/
 
-header h1{
-	color:white;
-	font-family:'Comic Sans MS', cursive, sans-serif;
-	margin:0;
-	font-size:35px;
-	flex-grow:1;
-	text-align:center;
-						
-}
+</head>
+<body>
+<header>
 
-				/*CONFIGURÇÕES DA BARRA LARANJA*/
-				
-header{
-		background-color:orange;
-		align-items:center;
-		display:flex;
-		justify-content:center;
-		padding:25px;
+<a href=site.html>
+		<img src=bolo.jpg>
+		</a>
+			<div class=logo>
+				<h1> Receitas </h1>
+	
+	
+	</div>
+</header>
+<nav class=navbar>
+	<ul>
+		<li><a href=site.html>Início</a></li>
+		<li><a href=conf.html>Confeitaria</a></li>
+		<li><a href=login.html>Login</a></li>
+	</ul>
+</nav>
+
+
+
+<br><br>
+	<!--PRIMEIRA LINHA DAS 4 IMAGENS-->
+	
+		<!-- BOLO DE CENOURA-->
+
+	<div class=image-gallery>
+		<div class=image-row>
+			<a href="cenoura.html">
+				<div class=image-container>
+					<img src=cen.jpg alt=bolo 1>
+						<p> Bolo de Cenoura </p>
+				</div>
+		</a>	
+	
+		<!-- BOLO DE CHOCOLATE-->
+	
+		<a href=chocolate.html>
+			<div class=image-container>
+				<img src=cho.jpg alt=bolo 2>
+					<p> Bolo de Chocolate </p>
+				</div>
+		</a>
+
+		<!-- BOLO DE RED VELVET-->
 		
+			<a href=redvelvet.html>
+				<div class=image-container>
+					<img src=red.jpg alt=bolo 3>
+						<p> Bolo Red Velvet </p>
+					</div>
+			</a>
 		
-}
-				/*IMAGEM DO TÍTULO*/
-				
-header img {
-		width:65px;
-		height:auto;
-			
-}
-				/*DEIXANDO AS IMAGENS LADO A LADO*/
-				
-.image-gallery {
-		display:flex;
-		flex-wrap:wrap;
-		justify-content:center;
-		margin-top:30px;
-		padding:10px;
+		<!-- BOLO DE BANANA-->
 	
-}
-				/*CADA LINHA DE IMAGEM*/
-.image-row{
-	display:flex;
-	justify-content:center;
-	margin-bottom:20px;
-	gap:25px;
-}
+		<a href=banana.html>
+		<div class=image-container>
+			<img src=ban.jpg alt=bolo 4>
+				<p> Bolo de Banana </p>
+			</div>
+		</a>
+	</div>
 	
-.image-container{
+			<!--SENGUNDA LINHA DAS 4 IMAGENS-->
 	
-	position:relative;
-	overflow:hidden;
-	border-radius:14px;
-}
-
-			/*ESTILO DOS LINKS DA IMAGEM*/
-
-.image-gallery a {
+			<!--BOLO DA MOÇA-->
+		
+		<div class=image-row>
+			<a href=docin.html>
+			<div class=image-container>
+				<img src=mac.jpg alt=bolo 5>
+					<p> Bolo da Moça </p>
+				</div>
+	</a>	
 	
-	display:block;
-	text-align:center;
-	text-decoration:none;
-}
-
-				/*CONFIGURÇÕES DAS IMAGENS*/
-
-.image-gallery img{
-	width:300px;
-	height:auto;
-	border-radius:8px;
-	box-shadow:0 4px 8px rgba(0,0,0,0.1);
-	transition: transform 0.8s ease, filter 0.3s ease, box-shadow 0.3s ease;
-	position:relative;
+			<!-- BOLO VERDE DE LIMÃO -->
 	
-}
-.image-container::after{
-	content:"";
-	position:absolute;
-	top:0;
-	left:0;
-	width:100%;
-	height:100%;
-	background:linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1));
-	transition:background 0.3s ease;
-	border-radius:8px;
-	z-index:1;
+		<a href=limao.html>
+		<div class=image-container>
+			<img src=lim.jpg alt=bolo 6>
+				<p> Bolo verde de Limão </p>
+				</div>
+	</a>
+
+			<!-- BOLO DE TAPIOCA GELADO-->
+		
+			<a href=tapioca.html>
+			<div class=image-container>
+				<img src=tap.jpg alt=bolo 7>
+					<p> Bolo de Tapioca Gelado </p>
+					</div>
+		</a>
+		
+			<!-- BOLO DE AMENDOIM-->
 	
-}
-.image-container:hover::after{
-	background:linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
-}
-				/*EFEITO NAS IMAGENS*/
-				
-.image-gallery img:hover {
-	
-	transform: scale(1.05);
-	box-shadow:0 6px 12px rgba(0, 0, 0, 0.15);
-}
-.image-container:hover img{
-	transform:scale(1.1);
-}
-
-
-				/*ESTILO DO TEXTO ABAIXO DAS IMAGENS*/
-				
-.image-container p{
-	position:absolute;
-	bottom:0;
-	left:50%;
-	transform:translateX(-50%);
-	color:white;
-	font-size:18px;
-	font-weight:700;
-	padding:10px;
-	width:100%;
-	box-sizing:border-box;
-	width:100%;
-	z-index:3;
-	
-}
-				/*CONFIGURÇÕES DAS IMAGENS DE CADA RECEITA*/
-.bolin{
-	position:relative;
-	display:block;
-	max-width:35%;
-	margin:0 auto;
-	text-align:center;
-	
-}
-
-
-
-				
-.bolin img {
-    display: block;         
-    margin: 0 auto;         
-    width: 100%;      
-    height: auto;  
-	border-radius:20px;	
-}
-
-				/*CONFIGURÇÕES DOS TITULOS DENTRO DA IMAGEM*/
-				
-.tit {
-    position: absolute;   
-    bottom: 10px;        
-    left: 10px;          
-    color: white;        
-    font-size: 38px;    
-    font-weight: bold;    
-    margin: 0; 
-	padding:10px;	
-	background-color:rgba(0, 0, 0, 0.3);
-	border-radius: 5px;
-}
-.tex{
-	color: #333; 
-    font-size: 20px;  
-    margin-top: 15px;  
-    max-width: 45%;  
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;  
-	font-family: 'Roboto', sans-serif;
-}
-			/* Estilo para o título "Ingredientes" dentro de uma barra cinza */
-
-.barra {
-    background-color: #d3d3d3;
-    color: black; 
-    padding: 10px 20px;
-    text-align: center; 
-    font-size: 25px; 
-    margin: 20px auto; 
-    width: 40%;
-    border-radius: 5px; 
-	border:1px solid grey;
-}
-
-
-
-
-/* Estilo para os Ingredientes */
-.ingredientes-lista {
-    width: 80%;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 10px;
-    text-align: left;
-}
-
-.ingredientes-lista label {
-    display: block;
-    font-size: 18px;
-    margin: 12px 0;
-    padding-left: 30px;
-    position: relative;
-    cursor: pointer;
-    line-height: 1.5;
-}
-
-.ingredientes-lista input[type="checkbox"] {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 25px;
-    height: 25px;
-    margin-top: 3px;
-}
-
-/* Estilos de Hover e Foco */
-.ingredientes-lista label:hover {
-    background-color: #f0f0f0;
-    border-radius: 5px;
-}
-
-.ingredientes-lista input[type="checkbox"]:checked + label {
-    color: #28a745;
-    text-decoration: line-through;
-}
-
-
-
-.modo-preparo {
-    width: 80%;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 0;
-    font-size: 18px;
-    text-align: left;
-    list-style-type: decimal; /* Faz a lista ficar numerada */
-    margin-top: 20px;
-    padding-left: 20px;
-}
-
-/* Para garantir que o texto tenha espaçamento adequado */
-.modo-preparo li {
-    margin: 10px 0;
-}
-
-/* Estilo para o título do Modo de Preparo */
-.barra {
-    text-align: center;
-    background-color: #f0f0f0;
-    padding: 10px;
-    font-size: 24px;
-    font-weight: bold;
-    border-radius: 5px;
-
-}
-
-.cu {
-    background-color: orange;   
-    color: white;               
-    text-align: center;         
-    padding: 20px;              
-    border-top: 1px solid grey; 
-    margin-top: 20px;           
-}
-
-
-
-
-
-
-
-
-
-
-.navbar {
-    display: flex;
-    justify-content: center; /* Centraliza os itens da barra de navegação */
-    width: 100%; /* Garante que a barra ocupe toda a largura */
-    background-color: orange; /* Cor de fundo igual ao header */
-    padding: 10px; /* Espaçamento interno */
-    border-top: none; /* Borda superior para separar do título */
-}
-
-/* Estilo dos itens da barra de navegação */
-.navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 20px;
-}
-
-.navbar li {
-    font-size: 18px;
-	borde:none;
-}
-
-.navbar a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    padding: 10px;
-    transition: background-color 0.3s ease;
-	border:none;
-}
-
-.navbar a:hover {
-    background-color: #333;
-    border-radius: 5px;
-}
+		<a href=amendoim.html>
+			<div class=image-container>
+				<img src=ame.jpg alt=bolo 8>
+				<p> Bolo de Amendoim </p>
+			</div>
+		</a>
+	</div>		
+</div>
 
 
 
 
 
 
-/* Centraliza o título h3 */
-h3 {
-    text-align: center;
-	 font-family: 'Roboto', sans-serif;
-    font-size: 24px;
-    color: #333; /* Cor opcional, pode ser alterada */
-    margin-bottom: 10px; /* Espaço abaixo do título */
-}
 
-/* Centraliza o parágrafo p */
-p {
-    text-align: center;
-    font-size: 18px;
-    color: #555; /* Cor opcional, pode ser alterada */
-    max-width: 800px; /* Define uma largura máxima para o parágrafo */
-    margin: 0 auto; /* Centraliza o parágrafo */
-    line-height: 1.6; /* Melhor para leitura */
-    padding: 0 20px; /* Espaçamento nas laterais */
-}
 
 
 
 
-.pog {
-    display: block;           /* Faz o vídeo ser um bloco, permitindo o uso de margin */
-    margin-left: auto;        /* Aplica margem automática à esquerda */
-    margin-right: auto;       /* Aplica margem automática à direita */
-    width: 80%;               /* Ajuste a largura do vídeo conforme necessário */
-    max-width: 300px;  		  /* Define uma largura máxima*/
-	border-radius:15px;       /* Aplica bordas arredondadas */
-}
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
+<footer class=cu>
 
-.map {
-    display: flex;             /* Usar flexbox para facilitar o alinhamento */
-    justify-content: center;   /* Alinha o mapa no centro horizontalmente */
-    align-items: center;       /* Alinha o mapa no centro verticalmente */
-    width: 100%;               /* Largura total do contêiner */
-    max-width: 900px;         /* Largura máxima do contêiner */
-    margin: 0 auto;            /* Centraliza o contêiner horizontalmente na página */
-    padding: 20px 0;           /* Espaçamento no topo e na base */
-}
+</footer>
 
-.map iframe {
-    width: 100%;               /* O mapa ocupará 100% da largura do contêiner */
-    height: 450px;             /* Defina a altura do mapa conforme necessário */
-    border-radius: 8px;        /* Bordas arredondadas se necessário */
-}
 
 
-
-
-.info-list {
-    display: flex;                      /* Usar Flexbox */
-    flex-direction: column;             /* Organiza os itens na coluna */
-    align-items: center;                /* Centraliza os itens horizontalmente */
-    justify-content: center;            /* Garante que os itens fiquem centralizados verticalmente */
-    flex: 1;                            /* Garante que a lista ocupe o espaço restante */
-    background-color: #f9f9f9;          /* Cor de fundo da lista */
-    padding: 20px;                      /* Adiciona padding interno */
-    border-radius: 8px;                 /* Bordas arredondadas */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);  /* Sombra para dar efeito de profundidade */
-    width: 100%;                        /* Ocupa 100% da largura do contêiner pai */
-    max-width: 800px;                   /* Limita a largura máxima para que não fique muito largo em telas grandes */
-    margin: 0 auto;                     /* Centraliza a lista na tela */
-}
-
-.info-list h4 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5em;
-    color: #333;
-    margin-bottom: 15px;
-    text-align: center;                 /* Centraliza o texto do título */
-}
-
-.rua {
-    padding-left: 0;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.1em;
-    color: #555;
-    margin-bottom: 10px;
-    text-align: center;                 /* Centraliza o texto das ruas */
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.login-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh; /* A altura da tela será 100% da altura visível */
-    flex-direction: column; /* Isso garante que os itens fiquem na coluna, centrados */
-}
-
-/* Caixa de login */
-.login-box {
-    background-color: #fff;
-    padding: 40px;
-    width: 100%;
-    max-width: 400px; /* Limita a largura máxima do formulário */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    text-align: center;
-}
-
-.login-box h2 {
-    margin-bottom: 20px;
-    font-size: 24px;
-    color: #333;
-}
-
-/* Estilos do formulário */
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-/* Estilos para os inputs */
-.input-group {
-    margin-bottom: 20px;
-    text-align: left;
-}
-
-.input-group label {
-    font-size: 14px;
-    color: #555;
-    display: block;
-    margin-bottom: 5px;
-}
-
-.input-group input {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.input-group input:focus {
-    outline: none;
-    border-color: #007bff;
-}
-
-/* Botão de login */
-.btn {
-    padding: 12px;
-    background-color: #007bff;
-    color: white;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.btn:hover {
-    background-color: #0056b3;
-}
-
-
-
-
-
-
-
-
-.minhoca {
-    background-image: url('minhoca.jpg'); /* Caminho da sua imagem */
-    background-size: cover; /* Faz a imagem cobrir toda a tela */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Impede que a imagem se repita */
-    min-height: 50vh; /* Garante que a imagem ocupe toda a altura da tela */
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-}
+</body>
+</html>
